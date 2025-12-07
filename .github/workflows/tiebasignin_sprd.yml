@@ -3,7 +3,7 @@ name: Daily Tieba Sign-In(Super Random)
 on:
   workflow_dispatch:
   push:
-    banches:
+    branches:
       - douzi2023-superrandom
   schedule:
     - cron: '30 22 * * *'  # 北京时间 6:30 (UTC+8)
