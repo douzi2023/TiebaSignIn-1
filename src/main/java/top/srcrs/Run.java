@@ -172,12 +172,12 @@ public class Run {
                     //int randomTime = new Random().nextInt(200) + 300;
                     long randomTime;
                     double chance = random.nextDouble();
-                    if (chance < 0.02) { 
-                        // 2% 概率：上厕所、接电话等，15~90秒
-                        randomTime = 15000 + random.nextInt(75001); // 15000 ~ 89999 ms
-                    } else if (chance < 0.15) { 
-                        // 12% 概率：划手机、喝水等，4~8秒
-                        randomTime = 2000 + random.nextInt(4001);   // 4000 ~ 7999 ms
+                    if (chance < 0.001) { 
+                        // 0.1% 概率：上厕所、接电话等，15~90秒
+                        randomTime = 15000 + random.nextInt(35001); // 15000 ~ 89999 ms
+                    } else if (chance < 0.05) { 
+                        // 5% 概率：划手机、喝水等，4~8秒
+                        randomTime = 2000 + random.nextInt(2001);   // 4000 ~ 7999 ms
                     } else { 
                         // 85% 概率：正常操作，模拟人类点击间隔（正态分布）
                         double gaussian = random.nextGaussian();
