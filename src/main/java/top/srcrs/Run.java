@@ -181,10 +181,10 @@ public class Run {
                     } else { 
                         // 85% 概率：正常操作，模拟人类点击间隔（正态分布）
                         double gaussian = random.nextGaussian();
-                        randomTime = (int) (gaussian * 400 + 1200);
+                        randomTime = (int) (gaussian * 400 + 600);
                         // 限制范围
-                        if (randomTime < 400) randomTime = 412;
-                        if (randomTime > 2000) randomTime = 1878;
+                        if (randomTime < 400) randomTime = 312;
+                        if (randomTime > 2000) randomTime = 656;
                     }
                     LOGGER.info("等待 {} 毫秒", randomTime);
                     TimeUnit.MILLISECONDS.sleep(randomTime);
